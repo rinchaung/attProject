@@ -1,0 +1,27 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arakan Techinician Team</title>
+  <link rel="stylesheet" href="/../css/styles.css">
+</head>
+
+<body>
+  <nav class="" style="display: flex; justify-content: space-between; align-items: center;">
+
+    <h1><a href="/" style="color: #14a676;">Arkan Techinician Team(ATT)</a></h1>
+
+    <form class="oneflex">
+      <% if (user) { %>
+        <h4>Welcome <%= user.email %></h4>
+        <button type="submit" class="butt"><a href="/logout" class="">Logout</a></button>&nbsp;
+      <% } else { %>
+        <button type="submit" class="butt"><a href="/login" class="">Login</a></button>&nbsp;
+        <button type="submit" class="butt"><a href="/signup" class="">Signup</a></button>
+      <% } %>
+    </form>
+
+  </nav>
+
+  <%- include('./flash-message') %>

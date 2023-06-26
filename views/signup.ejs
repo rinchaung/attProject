@@ -1,0 +1,35 @@
+<%- include('partials/header') %>
+
+<!-- Register Form -->
+<link rel="stylesheet" href="../css/signup.css">
+
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">    
+            <form class="form_color" action="/signup" method="POST" >
+                <h2 style="color: #14a676;">Sign <span style="color: #FEE996;">Up</span></h2>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="name" class="form-control" name="name" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" name="password" id="password">
+                </div>
+                <div class="form-group">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" class="form-control" name="confirm_password" id="confirm_password">
+                </div>
+                    <button type="submit" class="btn btn-outline-info">Signup</button><br>
+                    <p class="lg_form">Already have an account? <span><a href="/login">Login</a></span></p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer') %>
